@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ef4eed6-a554-41e5-bc93-c7239b514c2b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.PONG-GAME/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.PONG-GAME/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Movement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-    </list>
+    <list default="true" id="0ef4eed6-a554-41e5-bc93-c7239b514c2b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,7 +86,7 @@
       <workItem from="1717692730968" duration="7000" />
       <workItem from="1717692753771" duration="3502000" />
       <workItem from="1718896874661" duration="28000" />
-      <workItem from="1718896913018" duration="7234000" />
+      <workItem from="1718896913018" duration="7263000" />
     </task>
     <servers />
   </component>
