@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -8,16 +9,27 @@ public class ball : MonoBehaviour
 {
     public Rigidbody2D rigidbody2D;
     public float Speed = 6f;
+    public UIManager UiManager;
+
+    public int LeftPlayerScore;
+    public int RightPlayerScore;
+
+    public static event Action BallReset;
+    
 
     // Start is called before the first frame update
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
         SendBallInRandomDirection();
+        
     }
 
     private void SendBallInRandomDirection()
     {
+
+        BallReset?.Invoke();
+        
         rigidbody2D.velocity = Vector3.zero;
         rigidbody2D.isKinematic = true;
         transform.position = Vector3.zero;
@@ -51,10 +63,14 @@ public class ball : MonoBehaviour
         if (transform.position.x > 0)
         {
             Debug.Log("Player Left +1");
+            LeftPlayerScore++;
+            UiManager.SetLeftPlayerScoreText(LeftPlayerScore.ToString());
         }
         else
         {
             Debug.Log("Player Right +1");
+            RightPlayerScore++;
+            UiManager.SetRightPlayerScoreText(RightPlayerScore.ToString());
         }
         
         SendBallInRandomDirection();
